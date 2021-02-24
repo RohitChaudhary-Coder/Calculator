@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="calculator">
+            <div class="inner-container">
+                <div id="screen-container">
+                    <input type="text" placeholder="0" id="screen" class="screen" value="">
+                </div>
+                <div id="controillers">
+                    <div class="row">
+                        <button type="button" onclick="sow_in_screen('CE')"
+                            class="background-color normal-button">CE</button>
+                        <button type="button" onclick="sow_in_screen('/')"
+                            class="background-color normal-button">/</button>
+                        <button type="button" onclick="sow_in_screen('*')"
+                            class="background-color normal-button">*</button>
+                        <button type="button" onclick="sow_in_screen('-')"
+                            class="background-color normal-button">-</button>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" onclick="sow_in_screen(7)" class="normal-button">7</button>
+                            <button type="button" onclick="sow_in_screen(4)" class="normal-button">4</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" onclick="sow_in_screen(8)" class="normal-button">8</button>
+                            <button type="button" onclick="sow_in_screen(5)" class="normal-button">5</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" onclick="sow_in_screen(9)" class="normal-button">9</button>
+                            <button type="button" onclick="sow_in_screen(6)" class="normal-button">6</button>
+                        </div>
+                        <button type="button" onclick="sow_in_screen('+')"
+                            class="background-color font-weight large-button">+</button>
+                    </div>
+                    <div class="row">
+                        <div class="col zeo">
+                            <div class="row">
+                                <button type="button" onclick="sow_in_screen(1)" class="normal-button">1</button>
+                                <button type="button" onclick="sow_in_screen(2)" class="normal-button">2</button>
+                            </div>
+                            <button type="button" onclick="sow_in_screen(0)" class="font-weight zero-btn">0</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" onclick="sow_in_screen(3)" class="normal-button">3</button>
+                            <button type="button" onclick="sow_in_screen('.')" class="normal-button">.</button>
+                        </div>
+                        <button type="submit" onclick="return_value()"
+                            class="background-color font-weight large-button">=</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
